@@ -1,59 +1,92 @@
 body {
-    background-image: url(../img/Paper.png);
+    background: url(../img/Paper.png) no-repeat center fixed;
     background-size: cover;
-  }
+    border: 10px solid #EBFFE5;
+    padding: 0;
+    margin: 0;
+    border: 5px solid green;
+}
 
+header {
+  color: #239636;
+  background-color: #EBFFE5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 5px solid green;
+}
 
-  p {
+.image {
+  width: 75px;
+} 
+
+.siteLogo {
+  width: 50px;
+  margin: 10px;
+}
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     color: #000000;
-    border: 5px solid #000000;
-    padding: 30px;
-    margin: 30px;
-    background-color: #EBFFE5;
-    text-align: center;
-  }
-  h1 {
-    color: #239636;
-    text-align: center;
-    font-size: 100px;
     padding: 10px;
-    padding-left: 0%;
-    padding-right: 0%;
-    margin: 10px;
+    margin-top: 20px;
     background-color: #EBFFE5;
+    border-top: 5px solid green;
   }
 
-  div.gallery {
-    text-align: center;
-    float:left;
-    margin-left: 135px;
-    border: 5px solid #000000;
-    width: 500px;
+  .cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
   
-  div.gallery:hover {
-    text-align: center;
-    border: 5px solid #239636;
-    box-shadow: 3px solid #000000;
-  }
-  
-  div.gallery img {
-    text-align: center;
-    width: 100%;
-    height: auto;
-  }
-  
-  div.desc {
-    text-align: center;
-    padding: 5px;
-    text-align: center;
-    font-size: 40px;
-    background-color: #EBFFE5
-  }
+    .card {
+      background-color: green;
+      margin: 5 auto;
+      margin: 30px;
+      border: 5px solid green;
+      border-radius: 30px;
+      overflow: hidden;
+      box-shadow: 7px 10px 17px rgba(0, 0, 0, 0.2);
+    }
 
-  div.opening {
-    border: 5px solid #000000;
-    background-color: #EBFFE5;
-    text-align: center;
-
+@media (max-width: 600px) {
+body {
+  flex-direction: column;
+}
+  .images {
+  width: auto;
   }
+}
+
+    .profile-picture {
+      width: 100%;
+    /*   filter: contrast(8); */
+    }
+   
+    .cardname {
+      text-align: center;
+      padding: 10px;
+      background-color: #EBFFE5;
+    }
+    
+    .cardname a {
+      font-weight: bold;
+      text-decoration: none;
+      color: black;
+    }
+    
+    .cardname a:hover {
+      text-decoration: underline;
+      color: darkgreen;
+    }
+
+    .construction {
+      background-image: url(../img/construction.png); 
+      background-size: cover;
+      display: flex;
+      flex: wrap;
+      padding: 20vw;
+    }

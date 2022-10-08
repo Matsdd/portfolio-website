@@ -1,0 +1,82 @@
+body {
+    padding: 0;
+    margin: 0;
+    border: 5px solid green;
+}
+
+header {
+  color: #239636;
+  background-color: #EBFFE5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 5px solid green;
+}
+.image {
+    width: 75px;
+  } 
+  
+  .siteLogo {
+    width: 50px;
+    margin: 10px;
+  }
+
+    .pokemontext {
+        margin: 20px;
+        width: 500px;
+        font-weight: bold;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border: green solid 5px;
+        background-color: #EBFFE5;
+      }
+
+    .beginningback {
+        padding-bottom: 10px;
+        border-bottom: 5px solid green;
+        background: url(../img/Paper.png) no-repeat top fixed;
+        background-size: cover;
+    }
+
+.devider {
+    margin: 0;
+    padding:  10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom: green solid 5px;
+    background-color: #EBFFE5;
+    
+}
+
+.pokemon {
+
+    padding: 0;
+    background: url(../img/ollandiaback.png) repeat center top;
+    background-size: contain;
+}
+
+    .pokemoncards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      @media (max-width: 600px) {
+        .pokemontext {
+          width: auto;
+        }
+      }
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: #000000;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #EBFFE5;
+    border-top: 5px solid green;
+  }
