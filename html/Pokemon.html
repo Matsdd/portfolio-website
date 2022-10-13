@@ -19,19 +19,77 @@
             <img class="image" src=../img/M.png></a>
         </figure>
 
+        <section class="ollandialogo">
+            <img class="ollandialogotje" src="../img/Ollandiaregionseperate.png">
+        </section>
+
+        <nav>
+        <section class="header-items">
+            <a href="../index.html">Home</a>
+            <a href="#pokemon">Pokemon</a>
+            <a href="#region">Region</a>
+            </section>
+        </nav>
+
     </header>
 
+<section class ="intro">
 
 <section class="pokemontext">
 <h1>Welcome to the Ollandia Region!</h1>
-<img src="../img/ollandia.png">
-</section>
+<map name="ollandiamap">
+    <img src="../img/ollandia.png" alt="ollandia.png" usemap="#ollandiamap">
+
+    <area shape="rect" coords="260, 665, 300, 705"  onclick="luborough()">
+    <area shape="rect" coords="285, 605, 305, 665"  onclick="route2()">
+    <area shape="rect" coords="280, 585, 310, 605"  onclick="bastak()">
+    <area shape="rect" coords="310, 550, 350, 600"  onclick="route1()">
+    <area shape="rect" coords="325, 520, 355, 550"  onclick="lui()">
+    <area shape="rect" coords="310, 490, 350, 520"  onclick="route3()">
+    <area shape="rect" coords="0, 0, 50, 50"  onclick="bastak()">
+    <area shape="rect" coords="0, 0, 500, 750"  onclick="ollandia()">
+</map>
 </section>
 
-<section class="devider">
-    Pokemon
-</section>
+<script>
 
+    function luborough() {
+        const element = document.getElementById("id01");
+    element.innerHTML = "Luborough city";
+    }
+    function route2() {
+        const element = document.getElementById("id01");
+    element.innerHTML = "Route 2";
+    }
+    function bastak() {
+        const element = document.getElementById("id01");
+    element.innerHTML = "Bastak town";
+    }
+    function route1() {
+        const element = document.getElementById("id01");
+    element.innerHTML = "Route 1";
+    }
+    function lui() {
+        const element = document.getElementById("id01");
+    element.innerHTML = "Lui town";
+    }
+    function route3() {
+        const element = document.getElementById("id01");
+    element.innerHTML = "Route 3";
+    }
+    function ollandia() {
+        const element = document.getElementById("id01");
+    element.innerHTML = "Ollandia Region";
+    }
+</script>
+
+
+<section class="text">
+    <h1 id="id01">Ollandia Region</h1>
+
+
+</section>
+</section>
 <section class="pokemon">
 <section class="pokemoncards">
     <section class="pokemoncard">
