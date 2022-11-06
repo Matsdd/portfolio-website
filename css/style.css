@@ -1,0 +1,194 @@
+body {
+    background: url(../img/Paper.png) no-repeat center fixed;
+    background-size: cover;
+    border: 10px solid #EBFFE5;
+    padding: 0;
+    margin: 0;
+    border: 5px solid green;
+}
+
+header {
+  color: #239636;
+  background-color: #EBFFE5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 5px solid green;
+}
+
+.image {
+  width: 75px;
+} 
+
+.siteLogo {
+  width: 50px;
+  margin: 10px;
+}
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: #000000;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #EBFFE5;
+    border-top: 5px solid green;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+    .card {
+      background-color: green;
+      margin: 5 auto;
+      margin: 30px;
+      border: 5px solid green;
+      border-radius: 30px;
+      overflow: hidden;
+      box-shadow: 7px 10px 17px rgba(0, 0, 0, 0.2);
+    }
+
+
+    .profile-picture {
+      width: 100%;
+    /*   filter: contrast(8); */
+    }
+   
+    .cardname {
+      text-align: center;
+      padding: 10px;
+      background-color: #EBFFE5;
+    }
+    
+    .cardname a {
+      font-weight: bold;
+      text-decoration: none;
+      color: black;
+    }
+    
+    .cardname a:hover {
+      text-decoration: underline;
+      color: darkgreen;
+    }
+
+    .construction {
+      background-image: url(../img/construction.png); 
+      background-size: cover;
+      display: flex;
+      flex: wrap;
+      padding: 20vw;
+    }
+
+    h1 {
+      color: #239636;
+      background-color: #EBFFE5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 5px solid green; 
+    }
+
+    .contactform {
+      color: #239636;
+      background-color: #EBFFE5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 5px solid green;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      }
+      
+      nav a {
+        padding: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+        font-size: 30px
+      }
+      
+      nav a:hover {
+        text-decoration: underline;
+        color: darkgreen;
+      }
+    
+
+  .kast {
+    font-size: 30px;
+    font-weight: bold;
+    color: #239636;
+    background-color: #EBFFE5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 50px;
+    border: 5px solid green;
+  }
+
+  .spelregels {
+    font-size: 30px;
+    font-weight: bold;
+    color: #239636;
+    background-color: #EBFFE5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 50px;
+    border: 5px solid green;
+  }
+
+
+  .eindmarkt {
+    font-size: 30px;
+    font-weight: bold;
+    color: #239636;
+    background-color: #EBFFE5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 50px;
+    border: 5px solid green;
+  }
+
+  @media (max-width: 600px) {
+    body {
+      flex-direction: column;
+    }
+    header {
+      display: flex;
+ 
+      flex-direction: column;
+    }
+      .images {
+      width: auto;
+      }
+      img {
+        max-width: 400px;
+        max-height: 250px;
+      }
+      .kast,.spelregels,.eindmarkt {
+        font-size: 30px;
+        font-weight: bold;
+        color: #239636;
+        background-color: #EBFFE5;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    
+        margin: 50px;
+        border: 5px solid green;
+      }
+
+    }
