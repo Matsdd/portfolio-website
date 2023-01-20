@@ -45,6 +45,22 @@ footer {
   border-radius: 30px;
 }
 
+.logohome {
+  opacity: 1;
+  width: 5vw;
+  background-color: black;
+  border: 5px solid white;
+  border-radius: 50px;
+}
+
+.logohome:hover {
+  transition-duration: 0.3s;
+  border: 5px solid green;
+  border-radius: 30px;
+}
+
+
+
 .mainsection {
   display: flex;
   flex-direction: column;
@@ -56,6 +72,7 @@ footer {
   border: 5px solid white;
   border-radius: 30px;
   overflow: hidden;
+  width: 30vw;
 }
 
 .image:hover {
@@ -74,7 +91,8 @@ footer {
   color: white;
   text-decoration: none;
   margin: 1vw;
-  padding: 1vw;
+  padding: 0vw;
+  font-size: 2vw;
   opacity: 1;
   background-color: black;
   border: 5px solid white;
@@ -110,6 +128,22 @@ footer {
   margin: 2vw;
   color: white;
   font-size: 2.2vw;
+  font-weight: bold;
+  padding: 2vw;
+  padding-top: 0;
+  padding-bottom: 0;
+  opacity: 1;
+  background-color: #18151C;
+  border: 5px solid white;
+  border-radius: 50px;
+}
+
+.textbox3 {
+  width: 50vw;
+  height: 37vw;
+  margin: 2vw;
+  color: white;
+  font-size: 2.6vw;
   font-weight: bold;
   padding: 2vw;
   padding-top: 0;
