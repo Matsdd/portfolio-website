@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="icon" href="img/M.png">
+    <script type="text/javascript" src="js/main.js" defer></script>
+    <link rel="icon" href="img/M_logo.png">
     <title>Mats Doornhein - Portfolio</title>
 </head>
 <header>
 
   <a>
     <figure>
-        <img class="logohome" src=img/M.png>
+        <img class="logohome" src=img/M_logobackground.png>
     </figure>
   </a>
 
@@ -38,16 +39,39 @@
   </figure>
   </a>
 </section>
-
 </header>
+<section class="subHeader">
 
+</section>
 <body class="body">
   <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
-  <a class="card"href="about.html" draggable="false"><img href="img/About.png"class="image" src="img/About.png" draggable="false" /></a>
-  <a class="card"href="GMP.html" draggable="false"><img href="img/GMP.png"class="image" src="img/GMCard.png" draggable="false" /></a>
-  <a class="card"href="CLE1.html" draggable="false"><img href="img/CLE1.png"class="image" src="img/CLE1.png" draggable="false" /></a>   
-  <a class="card"href="CLE2.html" draggable="false"><img href="img/CLE2.png"class="image" src="img/CLE2.png" draggable="false" /></a>   
-  <a class="card"href="Tingice.html" draggable="false"><img href="img/Tingice.png" class="image" src="img/Tingicecard.png" draggable="false" /></a>
+  <a class="card"href="About.html" draggable="false">
+    <img class="image" src="img/Aboutme.png" draggable="false" />
+  </a>
+
+  <a class="card"href="GMP.html" draggable="false">
+    <img class="image" src="img/GMCard.png" draggable="false"/>
+  </a>
+
+  <a class="card"href="CLE1.html" draggable="false">
+    <img class="image" src="img/CLE1Card.png" draggable="false"/>
+  </a>  
+
+  <a class="card"href="CLE2.html" draggable="false">
+    <img class="image" src="img/CLE2Card.png" draggable="false"/>
+  </a>  
+
+  <a class="card"href="CLE3.html" draggable="false">
+    <img class="image" src="img/CLE3Card.png" draggable="false"/>
+  </a>  
+
+  <a class="card"href="CLE4.html" draggable="false">
+    <img class="image" src="img/CLE4Card.png" draggable="false"/>
+  </a>  
+
+  <a class="card"href="Tingice.html" draggable="false">
+    <img class="image" src="img/Tingicecard.png" draggable="false"/>
+  </a>
   </div>
 </body>
 <footer>
@@ -56,50 +80,3 @@
 </p>
 </footer>
 </html>
-<script>
-    const track = document.getElementById("image-track");
-    
-    const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
-    
-    const handleOnUp = () => {
-      track.dataset.mouseDownAt = "0";  
-      track.dataset.prevPercentage = track.dataset.percentage;
-    }
-    
-    const handleOnMove = e => {
-      if(track.dataset.mouseDownAt === "0") return;
-      
-      const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
-            maxDelta = window.innerWidth / 2;
-      
-      const percentage = (mouseDelta / maxDelta) * -100,
-            nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
-            nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
-      
-      track.dataset.percentage = nextPercentage;
-      
-      track.animate({
-        transform: `translate(${nextPercentage}%, -50%)`
-      }, { duration: 1200, fill: "forwards" });
-      
-      for(const image of track.getElementsByClassName("image")) {
-        image.animate({
-          objectPosition: `${100 + nextPercentage}% center`
-        }, { duration: 1200, fill: "forwards" });
-      }
-    }
-    
-    /* -- Had to add extra lines for touch events -- */
-    
-    window.onmousedown = e => handleOnDown(e);
-    
-    window.ontouchstart = e => handleOnDown(e.touches[0]);
-    
-    window.onmouseup = e => handleOnUp(e);
-    
-    window.ontouchend = e => handleOnUp(e.touches[0]);
-    
-    window.onmousemove = e => handleOnMove(e);
-    
-    window.ontouchmove = e => handleOnMove(e.touches[0]);
-        </script>
