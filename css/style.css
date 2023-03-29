@@ -1,22 +1,24 @@
 body {
-  height: 80vh;
+  background: url(../img/Background.gif) center fixed;
   width: 100vw;
-  background: url(../img/portback.jpg) no-repeat center fixed;
-  background-size: 100vw;
   margin: 0rem;
   overflow: hidden;
 }
 
 Header {
-  background-color: #18151C;
+  background-color: black;
   display: flex;
   user-select: none;
   flex-direction: Row;
   justify-content: space-between;
 }
 
+.subHeader {
+  background-color: black;
+  padding: 7vw;
+}
+
 footer {
-  background-color: #18151C ;
   margin-top: 32vw;
   color: white;
   font-size: 3vw;
@@ -59,8 +61,6 @@ footer {
   border-radius: 30px;
 }
 
-
-
 .mainsection {
   display: flex;
   flex-direction: column;
@@ -68,11 +68,11 @@ footer {
 }
 
 .image {
-  margin: 5px;
+  margin: 2vw;
   border: 5px solid white;
   border-radius: 30px;
   overflow: hidden;
-  width: 30vw;
+  height: 30vw;
 }
 
 .image:hover {
