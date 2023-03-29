@@ -1,3 +1,3 @@
 # portfolio-website
 
-My digital business card
+My digital business card.
