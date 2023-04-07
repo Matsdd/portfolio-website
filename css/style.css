@@ -24,7 +24,7 @@ footer {
   font-size: 3vw;
   display: flex;
   user-select: none;
- flex-direction: Row;
+  flex-direction: Row;
   justify-content: center;
 }
 
@@ -90,7 +90,7 @@ footer {
 .button {
   color: white;
   text-decoration: none;
-  margin: 1vw;
+  margin: 0.2vw;
   padding: 0vw;
   font-size: 2vw;
   opacity: 1;
@@ -106,71 +106,31 @@ footer {
   border-radius: 20px;
 }
 
-.textbox1 {
+.textbox {
   width: 50vw;
-  height: 37vw;
-  margin: 2vw;
-  color: white;
-  font-size: 2.4vw;
-  font-weight: bold;
-  padding: 2vw;
-  padding-top: 0;
-  padding-bottom: 0;
-  opacity: 1;
-  background-color: #18151C;
-  border: 5px solid white;
-  border-radius: 50px;
-}
-
-.textbox2 {
-  width: 50vw;
-  height: 37vw;
   margin: 2vw;
   color: white;
   font-size: 2.2vw;
   font-weight: bold;
-  padding: 2vw;
-  padding-top: 0;
-  padding-bottom: 0;
-  opacity: 1;
+  padding: 1vw;
   background-color: #18151C;
   border: 5px solid white;
-  border-radius: 50px;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
-.textbox3 {
-  width: 50vw;
-  height: 37vw;
-  margin: 2vw;
-  color: white;
-  font-size: 2.6vw;
-  font-weight: bold;
-  padding: 2vw;
-  padding-top: 0;
-  padding-bottom: 0;
-  opacity: 1;
-  background-color: #18151C;
-  border: 5px solid white;
-  border-radius: 50px;
+.card {
+  height: 36vw;
 }
 
 .imagebox {
-  overflow: hidden;
-  height: 37vw;
+  height: 36vw;
   margin: 2vw;
-  opacity: 1;
   background-color: #18151C;
   border: 5px solid white;
-  border-radius: 50px;
+  border-radius: 20px;
+  overflow: hidden;
 }
-
-
-
-
-
-
-
-
 
 
   #image-track {
