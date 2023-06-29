@@ -68,7 +68,7 @@ footer {
 }
 
 .image {
-  margin: 2vw;
+  margin: 0vw;
   border: 5px solid white;
   border-radius: 30px;
   overflow: hidden;
@@ -121,7 +121,7 @@ footer {
 
 .card {
   height: 36vw;
-  margin: 0;
+  padding: 0vw;
 }
 
 .imagebox {
